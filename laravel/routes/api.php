@@ -17,6 +17,6 @@ use App\Http\Controller\Api\PostController as ApiPostController;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
-});
+});    
 
 Route::get('/posts', [ApiPostController::class, 'index'])->name('api.posts.index');
